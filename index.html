@@ -5,19 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <style>
-    /* Soft Retro Warm & Friendly Colors */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #FAF3E0; /* Cream */
-      color: #2F2F2F; /* Warm Dark */
+      background-color: #FAF3E0;
+      color: #2F2F2F;
       scroll-behavior: smooth;
     }
 
     header {
-      background-color: #3D405B; /* Deep Slate */
-      color: #FAF3E0; /* Cream */
+      background-color: #3D405B;
+      color: #FAF3E0;
       padding: 15px 20px;
       position: sticky;
       top: 0;
@@ -33,7 +32,7 @@
     nav h1 {
       margin: 0;
       font-size: 26px;
-      color: #E07A5F; /* Burnt Coral primary */
+      color: #E07A5F;
       font-weight: 900;
       letter-spacing: 2px;
       text-shadow: 1px 1px 2px rgba(224, 122, 95, 0.6);
@@ -52,14 +51,14 @@
 
     nav ul li a {
       text-decoration: none;
-      color: #FAF3E0; /* Cream */
+      color: #FAF3E0;
       font-weight: 600;
       font-size: 16px;
       transition: color 0.3s, text-decoration 0.3s;
     }
 
     nav ul li a:hover {
-      color: #E07A5F; /* Burnt Coral */
+      color: #E07A5F;
       text-decoration: underline;
     }
 
@@ -71,7 +70,7 @@
     }
 
     h2 {
-      color: #3D405B; /* Deep Slate accent */
+      color: #3D405B;
       font-size: 32px;
       margin-bottom: 25px;
       font-weight: 800;
@@ -88,15 +87,25 @@
       color: #2F2F2F;
     }
 
+    .skills-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 18px;
+      line-height: 2;
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
     .project-card {
-      background: #FAF3E0; /* Cream */
+      background: #FAF3E0;
       width: 85%;
       max-width: 650px;
       margin: 25px auto;
       border-radius: 10px;
       padding: 25px;
-      box-shadow: 0 2px 8px rgba(224, 122, 95, 0.4); /* Burnt Coral tint */
-      border: 2px solid #E07A5F; /* Burnt Coral border */
+      box-shadow: 0 2px 8px rgba(224, 122, 95, 0.4);
+      border: 2px solid #E07A5F;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       font-family: 'Georgia', serif;
       color: #3D405B;
@@ -110,8 +119,8 @@
 
     footer {
       text-align: center;
-      background-color: #3D405B; /* Deep Slate */
-      color: #FAF3E0; /* Cream */
+      background-color: #3D405B;
+      color: #FAF3E0;
       padding: 18px;
       font-size: 15px;
       margin-top: 50px;
@@ -121,7 +130,7 @@
 
     .email-contact {
       font-size: 20px;
-      color: #E07A5F; /* Burnt Coral */
+      color: #E07A5F;
       font-weight: 700;
       margin-top: 15px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
@@ -143,6 +152,7 @@
       <h1>My Portfolio</h1>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -152,11 +162,26 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hello, I'm Aarushi Chakraborty, a dedicated web developer with a strong foundation in computer science.  
-      I specialize in building clean, responsive websites using HTML, CSS, and JavaScript.  
-      I enjoy exploring new technologies, especially in AI and data science, and applying them to solve real-world problems.  
+      Hello, I'm Aarushi Chakraborty, a dedicated web developer with a strong foundation in computer science.
+      I specialize in building clean, responsive websites using HTML, CSS, and JavaScript.
+      I enjoy exploring new technologies, especially in AI and data science, and applying them to solve real-world problems.
       My goal is to continually improve my skills and contribute to innovative projects.
     </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="project-card" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif; color: #2F2F2F;">
+      <ul class="skills-list">
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Python (Data Analysis, ML basics)</li>
+        <li>SQL & Database Management</li>
+        <li>Git & Version Control</li>
+        <li>Web Deployment Platforms (Render, Netlify, GitHub Pages, Vercel)</li>
+        <li>Basic AI & Data Science Concepts</li>
+      </ul>
+    </div>
   </section>
 
   <section id="projects">
@@ -174,7 +199,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <div class="email-contact">
-      Email me at:  
+      Email me at:
       <a href="mailto:2410030008@klh.edu.in">2410030008@klh.edu.in</a>
     </div>
   </section>
