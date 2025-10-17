@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    /* Soft Retro Warm & Friendly Colors */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FAF3E0; /* Cream */
+      color: #2F2F2F; /* Warm Dark */
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #3D405B; /* Deep Slate */
+      color: #FAF3E0; /* Cream */
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #E07A5F; /* Burnt Coral primary */
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px rgba(224, 122, 95, 0.6);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #FAF3E0; /* Cream */
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #E07A5F; /* Burnt Coral */
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #3D405B; /* Deep Slate accent */
+      font-size: 32px;
+      margin-bottom: 25px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 1px 1px rgba(61, 64, 91, 0.4);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+      font-style: italic;
+      color: #2F2F2F;
+    }
+
+    .project-card {
+      background: #FAF3E0; /* Cream */
+      width: 85%;
+      max-width: 650px;
+      margin: 25px auto;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(224, 122, 95, 0.4); /* Burnt Coral tint */
+      border: 2px solid #E07A5F; /* Burnt Coral border */
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      font-family: 'Georgia', serif;
+      color: #3D405B;
+      font-size: 18px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 15px rgba(224, 122, 95, 0.7);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #3D405B; /* Deep Slate */
+      color: #FAF3E0; /* Cream */
+      padding: 18px;
+      font-size: 15px;
+      margin-top: 50px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .email-contact {
+      font-size: 20px;
+      color: #E07A5F; /* Burnt Coral */
+      font-weight: 700;
+      margin-top: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    }
+
+    .email-contact a {
+      color: #E07A5F;
+      text-decoration: none;
+      transition: text-decoration 0.3s;
+    }
+    .email-contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello, I'm Aarushi Chakraborty, a dedicated web developer with a strong foundation in computer science.  
+      I specialize in building clean, responsive websites using HTML, CSS, and JavaScript.  
+      I enjoy exploring new technologies, especially in AI and data science, and applying them to solve real-world problems.  
+      My goal is to continually improve my skills and contribute to innovative projects.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio built using HTML, CSS, and JavaScript showcasing my technical skills.</p>
+    </div>
+    <div class="project-card">
+      <h3>Data Visualization Dashboard</h3>
+      <p>An interactive data visualization dashboard created using Python.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="email-contact">
+      Email me at:  
+      <a href="mailto:2410030008@klh.edu.in">2410030008@klh.edu.in</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aarushi Chakraborty. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
